@@ -25,7 +25,7 @@ p {
 }
 
 p.first {
-    background-color: rgb(53, 122, 175);
+    background-color: rgb(93, 138, 173);
 }
 
 p.second {
@@ -37,7 +37,7 @@ p.third {
 }
 
 p.fourth {
-    background-color: #469fcb;
+    background-color: #8eb1c2;
 }
 
 p.fifth {
@@ -45,11 +45,11 @@ p.fifth {
 }
 
 p.six {
-    background-color: #75bada;
+    background-color: #5b899b;
 }
 
 p.seven {
-    background-color: #8dc4df;
+    background-color: #dedfdf;
 }
 
 p.eight {
@@ -61,23 +61,23 @@ p.nine {
 }
 
 p.ten {
-    background-color: #e799b5;
+    background-color: #ed78a3;
 }
 
 p.eleven {
-    background-color: #e587a7;
+    background-color: #6d283f;
 }
 
 p.twelve {
-    background-color: #e2749a;
+    background-color: #e62f6f;
 }
 
 p.thirteen {
-    background-color: #e0658a;
+    background-color: #5a3641;
 }
 
 p.fourteen {
-    background-color: #db5580;
+    background-color: #7d5e68;
 }
 
 p.fifthteen {
