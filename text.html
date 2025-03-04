@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text List Generator</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        .input-box {
+            width: 300px;
+            height: 50px;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000000;
+            margin-bottom: 20px;
+        }
+        
+        .input-text {
+            width: 250px;
+            height: 30px;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-weight: bold;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: gray;
+        }
+        
+        .list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .list-item {
+            background-color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text List Generator</h1>
+    <div class="container">
+        <div class="input-box">
+            <input type="text" id="inputText" class="input-text" placeholder="Enter text">
+        </div>
+        <button onclick="addToList()">Add</button>
+        <ul id="textList" class="list"></ul>
+    </div>
+
+    <script>
+        function addToList() {
+            var inputText = document.getElementById("inputText").value;
+
+            // Check if input text is not empty
+            if (inputText.trim() !== "") {
+                var listItem = document.createElement("li");
+                listItem.classList.add("list-item");
+                listItem.textContent = inputText;
+                document.getElementById("textList").appendChild(listItem);
+
+                // Clear the input field after adding the text
+                document.getElementById("inputText").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
